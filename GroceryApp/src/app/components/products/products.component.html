@@ -1,0 +1,24 @@
+
+
+  <input type="text" id="input_product" placeholder="Voer nieuw product in">
+  <!-- <textarea id="input_product" placeholder="Voer nieuw product in" rows= 1></textarea> -->
+  <button (click)="onClick_addProduct()">Toevoegen</button>
+ 
+  <br>
+  <br>
+<h3>
+  Producten:
+</h3>  
+
+<!-- <ul>
+  <li *ngFor="let product of products;">{{product}}</li>
+</ul> -->
+
+
+<div class="product" *ngFor="let prod of products" id={{prod}}>
+    {{prod}} <button (click)="onClick_removeProduct(prod)" class="btnicon"><i class="fa fa-window-close" aria-hidden="true"></i></button> <br>
+    € 2,65 <br>
+    <input type="number" value="1" name="quantity" min="1" max="5"> <br>
+    <button (click)="onClick_buyProduct(prod)" type="button" class="btn btn-secondary">Bestellen</button>
+</div>
+

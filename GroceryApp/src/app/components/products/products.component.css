@@ -1,0 +1,35 @@
+.title{
+ color: green;
+ font-size: 25px;
+ font-weight: bold;
+}
+#centertable{
+    text-align: center;
+}
+
+.btnicon{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.product {
+    width: 25%;
+    display: inline-block;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 400px) {
+    .product{ 
+     float: none;
+     margin-right:0;
+     width:auto;
+     border:0;
+     border-bottom:2px solid #000;    
+   }
+}

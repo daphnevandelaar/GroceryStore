@@ -1,0 +1,38 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+</head>
+
+<body ng-app="">
+
+<div style="text-align:center">
+  <h1>
+    Welcome to Grocery Stop & Shop!
+  </h1>
+  <img width="150" alt="Worst" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8tRY3bM4Oz8JUJli92tYYtqSPn2kdBSpPaDiNdGLMoojTz61U">
+</div>
+
+<div id="cart">
+    <button (click)="show = !show"><i class="fas fa-shopping-cart"></i></button>
+</div>
+
+<div *ngIf="!show" id="productgroup">
+  <app-products>
+
+  </app-products>
+</div>
+
+<br>
+
+<div *ngIf="show" id="ordergroup">
+  <app-order>
+
+  </app-order>
+</div>
+
+<app-producttable>
+  
+</app-producttable>
+
+</body>

@@ -1,0 +1,16 @@
+#cart{
+    float: right;
+    margin-right: 5%;
+    font-size: 30px;
+}
+#productgroup{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#cart button{
+    background-color: Transparent;
+    border: 0;
+}
+body{
+    margin: 5%;
+}
